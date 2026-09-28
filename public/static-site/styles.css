@@ -1,0 +1,144 @@
+/* MAGNET MISCHIEF — PURE VANILLA CSS STYLESHEET */
+:root {
+  --bg: #FDFBF7;
+  --bg-card: #FFFFFF;
+  --bg-warm: #FAF7F2;
+  --bg-tint: #F5EFE6;
+  --text: #2D2A26;
+  --text-muted: #6B645B;
+  --primary: #C85A32;
+  --primary-hover: #B34D27;
+  --border: #E8E0D2;
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-hand: "Caveat", cursive;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(253, 251, 247, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 0;
+  z-index: 100;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-serif);
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #1F1C18;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #554E46;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: var(--primary-hover);
+}
+
+.hero {
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  color: #1F1C18;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.magnet-preview-box {
+  width: 260px;
+  height: 260px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 16px 36px rgba(0,0,0,0.16);
+  border: 1px solid #D5CCC0;
+  padding: 10px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.magnet-preview-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.studio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 60px 0;
+}
+
+@media (max-width: 800px) {
+  .studio-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}

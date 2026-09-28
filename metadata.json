@@ -1,0 +1,6 @@
+{
+  "name": "Magnet Mischief",
+  "description": "Personalized 3\" × 3\" square photo magnets made with love for $5 CAD each.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
